@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Meeting 2 Demo</title>
+    <title>Project 2 Demo</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </head>
     <body>
+        <p>Timer <span id="timer-text">off</span></p>
         <button id="activate">Something</button>
-        <div>
-            <div>
-                <img src="arnie.jpeg"/>
-                <button>Arnie</button>  
-            </div> 
-            <div>
-                <img src="arnie.jpeg"/>
-                <button>Arnie</button>
-            </div> 
-            <div>
-                <img src="arnie.jpeg"/>
-                <button>Arnie</button>
-            </div> 
-        </div>  
-        
+        <button onclick="addArnie()">Add Arnie</button>
+        <p id="counter"></p>
+        <input type="text" />
+        <div id="arnie-box">
+        <span>
+        <img class="arnie" src="arnie.jpeg"/>
+        <button>Arnie</button>
+        </span> 
+        <span>
+            <img class="arnie" src="arnie.jpeg"/>
+            <button>Arnie</button>
+        </span> 
+        <span>
+        <img class="arnie" src="arnie.jpeg"/>
+        <button>Arnie</button>
+        </span> 
+    </div>  
     </body>
+
+    <style>
+        .arnie{
+            width: 30%;
+        }
+    </style>
 </html>
